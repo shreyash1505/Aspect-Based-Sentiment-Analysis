@@ -10,7 +10,7 @@ sentences. The polarity labels are positive, negative and neutral.
 Each line contains 4 tab-separated fields: the polarity of the opinion, a specific target term, the character offsets of the term (start:end), and the
 sentence in which that opinion is expressed.  
 
-## pretrained word vectors
+## Pretrained word vectors
 Download pretrained word vectors from: https://nlp.stanford.edu/projects/glove/
 Twitter (2B tweets, 27B tokens, 1.2M vocab, uncased, 25d, 50d, 100d, & 200d vectors, 1.42 GB download)
 Update the dimensions appropriately in classify.py according to the GLOVE embedding dimension file chosen. 
