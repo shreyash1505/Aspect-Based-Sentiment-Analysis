@@ -1,5 +1,5 @@
-# NLP_aspect-based-sentiment-analysis
-reference link: http://nlpcourse.europe.naverlabs.com
+# Aspect Based Sentiment Analysis
+
 
 # Description of the project
 ## 0) Introduction 
