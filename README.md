@@ -1,5 +1,5 @@
 # Aspect Based Sentiment Analysis
-
+#### specify the correct training and development file names in tester.py
 
 # Description of the project
 ## Introduction 
@@ -33,7 +33,14 @@ POSTag code which represents the POSTag of "out" in this message ]
 Here, 100 is the maximum length of words that I choose to represent a message;  
 50 is the dimension of pretrained word vector that we use;  
 7 is the dimension of the vector for representing the distance of this word to the target word;  
-36 is the dimension of the vector for representing the POSTag for this word;  
+36 is the dimension of the vector for representing the POSTag for this word;
+
+## Evaluation
+  - Accuracy: Achieved an accuracy of 74% on both datasets
+  - Macro F1 Scores:
+    - Positive class: 78%
+    - Negetive class: 72%
+    - Neutral Class: 57%
 
 ## LSTM model
 The layers include
