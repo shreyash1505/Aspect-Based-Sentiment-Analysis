@@ -1,7 +1,6 @@
 # Aspect Based Sentiment Analysis
-#### specify the correct training and development file names in tester.py
+  - **specify the correct training and development file names in tester.py**
 
-# Description of the project
 ## Introduction 
 The goal of the project is to design a classifier to predict aspect-based polarities of opinions in
 sentences. The polarity labels are positive, negative and neutral. 
