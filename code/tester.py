@@ -19,7 +19,7 @@ if __name__ == "__main__":
     datadir = "../data/"
     trainfile =  datadir + "restaurant_train.csv"
     devfile =  datadir + "data-2_test.csv"
-    testfile =  None
+    testfile =  None                        #File for prediction
     start_time = time.perf_counter()
     classifier = Classifier()
     print("\n")
@@ -34,17 +34,16 @@ if __name__ == "__main__":
         csvwriter = csv.writer(csv_file, delimiter=';')
         for row in gab:
             csvwriter.writerow(row)
-    '''
-    prf = classification_report(slabels,glabels,labels=[1,-1,0])
-    print(prf)
-    eval_list(glabels, slabels)
-    if testfile is not None:
-        # Evaluation on the test data
-        print("\n3. Evaluation on the test dataset...\n")
-        slabels = classifier.predict(testfile)
-        glabels = load_label_output(testfile)
+    if testfile is None:
+        prf = classification_report(slabels,glabels,labels=[1,-1,0])
+        print(prf)
         eval_list(glabels, slabels)
-    '''
+        if testfile is not None:
+            # Evaluation on the test data
+            print("\n3. Evaluation on the test dataset...\n")
+            slabels = classifier.predict(testfile)
+            glabels = load_label_output(testfile)
+            eval_list(glabels, slabels)
     print("\nExec time: %.2f s." % (time.perf_counter()-start_time))
 
 
